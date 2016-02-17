@@ -29,9 +29,9 @@ public class HeadService extends Service {
         initHeadLayer();
 
         PendingIntent pendingIntent = createPendingIntent();
-        Notification notification = createNotification(pendingIntent);
+        //Notification notification = createNotification(pendingIntent);
 
-        startForeground(FOREGROUND_ID, notification);
+        //startForeground(FOREGROUND_ID, notification);
 
         return START_STICKY;
     }
