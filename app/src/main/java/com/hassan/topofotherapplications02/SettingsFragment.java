@@ -79,10 +79,15 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
     private void startHeadService() {
         Context context = getActivity();
         context.startService(new Intent(context, HeadService.class));
+
     }
 
     private void stopHeadService() {
         Context context = getActivity();
         context.stopService(new Intent(context, HeadService.class));
+    }
+
+    public void onBackPressed() {
+
     }
 }

@@ -36,7 +36,8 @@ public class HeadLayer extends View {
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
                 WindowManager.LayoutParams.TYPE_PHONE,
-                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
+                WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+                        | WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
                 PixelFormat.TRANSLUCENT);
         params.gravity = Gravity.CENTER;
 
@@ -87,4 +88,7 @@ public class HeadLayer extends View {
     public void destroy() {
         mWindowManager.removeView(mFrameLayout);
     }
+
+
+
 }
